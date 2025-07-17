@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_graph"
+    app:startDestination="@id/nav_products">
+
+    <fragment
+        android:id="@+id/nav_products"
+        android:name="com.productmanager.app.ui.product.ProductListFragment"
+        android:label="@string/nav_products"
+        tools:layout="@layout/fragment_product_list">
+        
+        <action
+            android:id="@+id/action_products_to_product_detail"
+            app:destination="@id/productDetailFragment" />
+        
+        <action
+            android:id="@+id/action_products_to_add_product"
+            app:destination="@id/addProductFragment" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/nav_categories"
+        android:name="com.productmanager.app.ui.category.CategoryListFragment"
+        android:label="@string/nav_categories"
+        tools:layout="@layout/fragment_category_list">
+        
+        <action
+            android:id="@+id/action_categories_to_add_category"
+            app:destination="@id/addCategoryFragment" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/nav_gallery"
+        android:name="com.productmanager.app.ui.gallery.GalleryFragment"
+        android:label="@string/nav_gallery"
+        tools:layout="@layout/fragment_gallery">
+        
+        <action
+            android:id="@+id/action_gallery_to_image_editor"
+            app:destination="@id/imageEditorFragment" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/nav_settings"
+        android:name="com.productmanager.app.ui.settings.SettingsFragment"
+        android:label="@string/nav_settings"
+        tools:layout="@layout/fragment_settings" />
+
+    <fragment
+        android:id="@+id/productDetailFragment"
+        android:name="com.productmanager.app.ui.product.ProductDetailFragment"
+        android:label="商品详情"
+        tools:layout="@layout/fragment_product_detail">
+        
+        <argument
+            android:name="productId"
+            app:argType="long"
+            android:defaultValue="0L" />
+        
+        <action
+            android:id="@+id/action_product_detail_to_edit"
+            app:destination="@id/editProductFragment" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/addProductFragment"
+        android:name="com.productmanager.app.ui.product.AddProductFragment"
+        android:label="添加商品"
+        tools:layout="@layout/fragment_add_product" />
+
+    <fragment
+        android:id="@+id/editProductFragment"
+        android:name="com.productmanager.app.ui.product.EditProductFragment"
+        android:label="编辑商品"
+        tools:layout="@layout/fragment_edit_product">
+        
+        <argument
+            android:name="productId"
+            app:argType="long"
+            android:defaultValue="0L" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/addCategoryFragment"
+        android:name="com.productmanager.app.ui.category.AddCategoryFragment"
+        android:label="添加分类"
+        tools:layout="@layout/fragment_add_category" />
+
+    <fragment
+        android:id="@+id/imageEditorFragment"
+        android:name="com.productmanager.app.ui.editor.ImageEditorFragment"
+        android:label="图片编辑"
+        tools:layout="@layout/fragment_image_editor">
+        
+        <argument
+            android:name="imagePath"
+            app:argType="string" />
+    </fragment>
+
+</navigation>

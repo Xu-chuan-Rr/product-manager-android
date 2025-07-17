@@ -1,0 +1,64 @@
+<resources>
+    <string name="app_name">商品管理</string>
+    
+    <!-- 主界面 -->
+    <string name="nav_products">商品</string>
+    <string name="nav_categories">分类</string>
+    <string name="nav_gallery">相册</string>
+    <string name="nav_settings">设置</string>
+    
+    <!-- 商品相关 -->
+    <string name="product_title">商品标题</string>
+    <string name="product_description">商品描述</string>
+    <string name="product_price">商品价格</string>
+    <string name="product_original_price">原价</string>
+    <string name="product_stock">库存数量</string>
+    <string name="product_category">商品分类</string>
+    <string name="product_tags">商品标签</string>
+    <string name="product_attributes">商品属性</string>
+    <string name="add_product">添加商品</string>
+    <string name="edit_product">编辑商品</string>
+    <string name="save_product">保存商品</string>
+    <string name="delete_product">删除商品</string>
+    
+    <!-- 图片/视频相关 -->
+    <string name="add_image">添加图片</string>
+    <string name="add_video">添加视频</string>
+    <string name="take_photo">拍照</string>
+    <string name="choose_from_gallery">从相册选择</string>
+    <string name="batch_upload">批量上传</string>
+    <string name="edit_image">编辑图片</string>
+    <string name="crop">裁剪</string>
+    <string name="rotate">旋转</string>
+    <string name="filter">滤镜</string>
+    <string name="brightness">亮度</string>
+    <string name="contrast">对比度</string>
+    <string name="add_watermark">添加水印</string>
+    
+    <!-- 分类相关 -->
+    <string name="category_name">分类名称</string>
+    <string name="add_category">添加分类</string>
+    <string name="edit_category">编辑分类</string>
+    <string name="delete_category">删除分类</string>
+    
+    <!-- 通用 -->
+    <string name="save">保存</string>
+    <string name="cancel">取消</string>
+    <string name="delete">删除</string>
+    <string name="edit">编辑</string>
+    <string name="search">搜索</string>
+    <string name="filter_by">筛选</string>
+    <string name="sort_by">排序</string>
+    <string name="confirm">确认</string>
+    <string name="loading">加载中...</string>
+    <string name="no_data">暂无数据</string>
+    <string name="error_occurred">发生错误</string>
+    
+    <!-- 权限相关 -->
+    <string name="permission_camera_title">相机权限</string>
+    <string name="permission_camera_message">需要相机权限来拍摄商品照片</string>
+    <string name="permission_storage_title">存储权限</string>
+    <string name="permission_storage_message">需要存储权限来保存和读取图片</string>
+    <string name="permission_denied">权限被拒绝</string>
+    <string name="go_to_settings">前往设置</string>
+</resources>
